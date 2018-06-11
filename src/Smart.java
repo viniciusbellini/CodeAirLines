@@ -14,19 +14,23 @@ public class Smart{
 		Smart.localizacao = "Terminal";
 	}
 
-	public static void levarParaAviao(IPilotoSmart piloto) {
+	public static void moverSmart(List<Pessoa> passageiros) {
 		
-		if (localizacao == "Terminal") {
-			System.out.println("Smart indo para " + AVIAO);
-			setLocalizacao(AVIAO);
-		}else {
-			System.out.println("Smart indo para " + TERMINAL);
-			setLocalizacao(TERMINAL);
+		for(Pessoa p : passageiros){
+			if (p instanceof IPilotoSmart){
+				if (localizacao == "Terminal") {
+					System.out.println("Smart indo para " + AVIAO);
+					setLocalizacao(AVIAO);
+				}else {
+					System.out.println("Smart indo para " + TERMINAL);
+					setLocalizacao(TERMINAL);
+				}
+			break;
+			}
 		}
-		
 	}
 	
-	public static void levarParaTerminal(IPilotoSmart piloto) {
+	public static void levarParaTerminal() {
 		
 	}
 
@@ -46,6 +50,14 @@ public class Smart{
 
 	public List<Pessoa> getSmart() {
 		return smart;
+	}
+	
+	public static String ocupantesDoSmart() {
+		String ocupantesDoSmart = "";
+		for(Pessoa p : smart){
+			ocupantesDoSmart = ocupantesDoSmart + p.getNome()+" | ";
+		}
+		return "Ocupantes do Smart: \n" + ocupantesDoSmart;
 	}
 
 	

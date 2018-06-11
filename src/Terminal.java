@@ -39,4 +39,12 @@ public class Terminal{
 		
 	}
 	
+	public static String ocupantesDoTerminal() {
+		String ocupantesTerminal = "";
+		for(Pessoa p : terminal){
+			ocupantesTerminal = ocupantesTerminal + p.getNome()+" | ";
+		}
+		return "Ocupantes do Terminal: \n" + ocupantesTerminal;
+	}
+	
 }

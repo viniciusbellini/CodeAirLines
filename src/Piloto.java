@@ -5,5 +5,10 @@ public class Piloto extends Pessoa implements IPilotoSmart{
 		super(nome);
 	}
 
+	@Override
+	public void dirigirSmart() {
+		
+	}
 
+	
 }
