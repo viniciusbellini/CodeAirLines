@@ -11,7 +11,7 @@ public class Principal {
 		
 		while (Smart.qtdeEmbarcadoNoSmart < 2) {
 			Pessoa pass = Terminal.pesquisaPessoaPorNome(JOptionPane.showInputDialog(null,
-					Terminal.ocupantesDoTerminal(),"Quem irá embarcar?", JOptionPane.PLAIN_MESSAGE));
+					Terminal.ocupantesDoTerminal(),"Quem irá embarcar?", JOptionPane.QUESTION_MESSAGE));
 			Smart.adicionarPessoaNoSmart(pass);
 			Terminal.removePessoaDoTerminal(pass);
 		}
