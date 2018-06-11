@@ -16,8 +16,10 @@ public class Smart{
 
 	public static void moverSmart(List<Pessoa> passageiros) {
 		
-		for(Pessoa p : passageiros){
-			if (p instanceof IPilotoSmart){
+		if (PoliticaDaEmpresa.verificaSeExisteHabilitadoParaDirigirSmart(passageiros)){
+		
+			for(Pessoa p : passageiros){
+			
 				if (localizacao == "Terminal") {
 					System.out.println("Smart indo para " + AVIAO);
 					setLocalizacao(AVIAO);
