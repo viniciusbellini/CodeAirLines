@@ -1,5 +1,5 @@
 
-public class Chefe extends Pessoa implements IPilotoSmart{
+public class Chefe extends Personagem implements IPilotoSmart{
 
 	public Chefe(String nome) {
 		super(nome);

@@ -3,34 +3,34 @@ import java.util.List;
 
 public class Terminal{
 
-	private static List<Pessoa> terminal = new ArrayList<>();
+	private static List<Personagem> terminal = new ArrayList<>();
 	
 	public static void popularTerminal() {
-		adicionaPessoaNoTerminal(new Piloto("Piloto"));
-		adicionaPessoaNoTerminal(new Oficial("Oficial 1"));
-		adicionaPessoaNoTerminal(new Oficial("Oficial 2"));
-		adicionaPessoaNoTerminal(new Chefe("Chefe"));
-		adicionaPessoaNoTerminal(new Comissaria("Comissaria 1"));
-		adicionaPessoaNoTerminal(new Comissaria("Comissaria 2"));
-		adicionaPessoaNoTerminal(new Policial("Policial"));
-		adicionaPessoaNoTerminal(new Presidiario("Presidiario"));
+		adicionaPersonagemNoTerminal(new Piloto("Piloto"));
+		adicionaPersonagemNoTerminal(new Oficial("Oficial 1"));
+		adicionaPersonagemNoTerminal(new Oficial("Oficial 2"));
+		adicionaPersonagemNoTerminal(new Chefe("Chefe"));
+		adicionaPersonagemNoTerminal(new Comissaria("Comissaria 1"));
+		adicionaPersonagemNoTerminal(new Comissaria("Comissaria 2"));
+		adicionaPersonagemNoTerminal(new Policial("Policial"));
+		adicionaPersonagemNoTerminal(new Presidiario("Presidiario"));
 	}
 	
-	public static void adicionaPessoaNoTerminal(Pessoa pessoa) {
-		terminal.add(pessoa);
+	public static void adicionaPersonagemNoTerminal(Personagem personagem) {
+		terminal.add(personagem);
 	}
 	
-	public static void removePessoaDoTerminal(Pessoa pessoa) {
-		terminal.remove(pessoa);
+	public static void removePersonagemDoTerminal(Personagem personagem) {
+		terminal.remove(personagem);
 	}
 	
-	public List<Pessoa> getTerminal() {
+	public List<Personagem> getTerminal() {
 		return terminal;
 	}
 
-	public static Pessoa pesquisaPessoaPorNome(String nome) {
+	public static Personagem pesquisaPersonagemPorNome(String nome) {
 		
-		for(Pessoa t: terminal) {
+		for(Personagem t: terminal) {
 			if (t.getNome().equals(nome)) {
 				return t;
 			}
@@ -41,7 +41,7 @@ public class Terminal{
 	
 	public static String ocupantesDoTerminal() {
 		String ocupantesTerminal = "";
-		for(Pessoa p : terminal){
+		for(Personagem p : terminal){
 			ocupantesTerminal = ocupantesTerminal + p.getNome()+" | ";
 		}
 		return "Ocupantes do Terminal: \n" + ocupantesTerminal;

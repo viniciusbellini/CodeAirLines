@@ -1,5 +1,5 @@
 
-public class Comissaria extends Pessoa{
+public class Comissaria extends Personagem{
 
 	public Comissaria(String nome) {
 		super(nome);

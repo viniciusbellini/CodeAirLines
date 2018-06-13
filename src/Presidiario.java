@@ -1,5 +1,5 @@
 
-public class Presidiario extends Pessoa{
+public class Presidiario extends Personagem{
 
 	public Presidiario(String nome) {
 		super(nome);

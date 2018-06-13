@@ -1,5 +1,5 @@
 
-public class Oficial extends Pessoa{
+public class Oficial extends Personagem{
 
 	public Oficial(String nome) {
 		super(nome);

@@ -8,17 +8,17 @@ public class Smart{
 	private static String localizacao;
 	public static int qtdeEmbarcadoNoSmart;
 	
-	private static List<Pessoa> smart = new ArrayList<>();
+	private static List<Personagem> smart = new ArrayList<>();
 	
 	public Smart() {
 		Smart.localizacao = "Terminal";
 	}
 
-	public static void moverSmart(List<Pessoa> passageiros) {
+	public static void moverSmart(List<Personagem> passageiros) {
 		
 		if (PoliticaDaEmpresa.verificaSeExisteHabilitadoParaDirigirSmart(passageiros)){
 		
-			for(Pessoa p : passageiros){
+			for(Personagem p : passageiros){
 			
 				if (localizacao == "Terminal") {
 					System.out.println("Smart indo para " + AVIAO);
@@ -44,19 +44,19 @@ public class Smart{
 		Smart.localizacao = localizacao;
 	}
 
-	public static void adicionarPessoaNoSmart(Pessoa pessoa) {
-		smart.add(pessoa);
+	public static void adicionarPersonagemNoSmart(Personagem personagem) {
+		smart.add(personagem);
 		Smart.qtdeEmbarcadoNoSmart++;
 		
 	}
 
-	public List<Pessoa> getSmart() {
+	public List<Personagem> getSmart() {
 		return smart;
 	}
 	
 	public static String ocupantesDoSmart() {
 		String ocupantesDoSmart = "";
-		for(Pessoa p : smart){
+		for(Personagem p : smart){
 			ocupantesDoSmart = ocupantesDoSmart + p.getNome()+" | ";
 		}
 		return "Ocupantes do Smart: \n" + ocupantesDoSmart;

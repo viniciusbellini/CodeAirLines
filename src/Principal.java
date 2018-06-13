@@ -7,13 +7,12 @@ public class Principal {
 		Smart smart = new Smart();
 		
 		Terminal.popularTerminal();
-		//Terminal.pesquisaPessoaPorNome("Piloto");
 		
 		while (Smart.qtdeEmbarcadoNoSmart < 2) {
-			Pessoa pass = Terminal.pesquisaPessoaPorNome(JOptionPane.showInputDialog(null,
+			Personagem pass = Terminal.pesquisaPersonagemPorNome(JOptionPane.showInputDialog(null,
 					Terminal.ocupantesDoTerminal(),"Quem irá embarcar?", JOptionPane.QUESTION_MESSAGE));
-			Smart.adicionarPessoaNoSmart(pass);
-			Terminal.removePessoaDoTerminal(pass);
+			Smart.adicionarPersonagemNoSmart(pass);
+			Terminal.removePersonagemDoTerminal(pass);
 		}
 		
 		Smart.moverSmart(smart.getSmart());

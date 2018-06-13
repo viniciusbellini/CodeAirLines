@@ -11,11 +11,11 @@ import java.util.List;
 */
 public class PoliticaDaEmpresa {
 	
-	public static boolean verificaSeExisteHabilitadoParaDirigirSmart(List<Pessoa> passageiro){
+	public static boolean verificaSeExisteHabilitadoParaDirigirSmart(List<Personagem> passageiro){
 
 		int cont = 0;
 		
-		for(Pessoa p : passageiro){
+		for(Personagem p : passageiro){
 			if (p instanceof IPilotoSmart)
 				cont++;
 		}

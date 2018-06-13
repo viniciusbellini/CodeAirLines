@@ -1,9 +1,9 @@
 
-public class Pessoa {
+public class Personagem {
 
 	private String nome;
 	
-	public Pessoa(String nome) {
+	public Personagem(String nome) {
 		this.nome = nome;
 	}
 
@@ -12,6 +12,5 @@ public class Pessoa {
 	}
 
 	public void embarcarNoSmart() {
-		//Smart.adicionarPessoaNoSmart();
 	}
 }

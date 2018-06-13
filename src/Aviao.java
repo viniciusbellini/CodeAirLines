@@ -3,23 +3,23 @@ import java.util.List;
 
 
 public class Aviao {
-private static List<Pessoa> aviao = new ArrayList<>();
+private static List<Personagem> aviao = new ArrayList<>();
 	
-	public static void adicionaPessoaNoAviao(Pessoa pessoa) {
-		aviao.add(pessoa);
+	public static void adicionaPersonagemNoAviao(Personagem personagem) {
+		aviao.add(personagem);
 	}
 	
-	public static void removePessoaDoAviao(Pessoa pessoa) {
-		aviao.remove(pessoa);
+	public static void removePersonagemDoAviao(Personagem personagem) {
+		aviao.remove(personagem);
 	}
 	
-	public List<Pessoa> getAviao() {
+	public List<Personagem> getAviao() {
 		return aviao;
 	}
 
-	public static Pessoa pesquisaPessoaPorNome(String nome) {
+	public static Personagem pesquisaPersonagemPorNome(String nome) {
 		
-		for(Pessoa t: aviao) {
+		for(Personagem t: aviao) {
 			if (t.getNome().equals(nome)) {
 				return t;
 			}
@@ -30,7 +30,7 @@ private static List<Pessoa> aviao = new ArrayList<>();
 	
 	public static String ocupantesDoAviao() {
 		String ocupantesDoAviao = "";
-		for(Pessoa p : aviao){
+		for(Personagem p : aviao){
 			ocupantesDoAviao = ocupantesDoAviao + p.getNome()+" | ";
 		}
 		return "Ocupantes do Avião: \n" + ocupantesDoAviao;
