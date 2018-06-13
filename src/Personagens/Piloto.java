@@ -1,3 +1,5 @@
+package Personagens;
+
 
 public class Piloto extends Personagem implements IPilotoSmart{
 	

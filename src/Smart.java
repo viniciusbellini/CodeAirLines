@@ -1,6 +1,8 @@
 import java.util.ArrayList;
 import java.util.List;
 
+import Personagens.Personagem;
+
 public class Smart{
 
 	private static final String AVIAO = "Avião";

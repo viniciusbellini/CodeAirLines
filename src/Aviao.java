@@ -1,6 +1,8 @@
 import java.util.ArrayList;
 import java.util.List;
 
+import Personagens.Personagem;
+
 
 public class Aviao {
 private static List<Personagem> aviao = new ArrayList<>();

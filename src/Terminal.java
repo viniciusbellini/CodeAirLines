@@ -1,6 +1,12 @@
 import java.util.ArrayList;
 import java.util.List;
 
+import Personagens.Chefe;
+import Personagens.Personagem;
+import Personagens.Piloto;
+import Personagens.Policial;
+import Personagens.Presidiario;
+
 public class Terminal{
 
 	private static List<Personagem> terminal = new ArrayList<>();

@@ -1,6 +1,8 @@
 import javax.swing.JOptionPane;
 
-public class Principal {
+import Personagens.Personagem;
+
+public class JogoDoEmbarqueNoAviao {
 
 	public static void main(String[] args) {
 		

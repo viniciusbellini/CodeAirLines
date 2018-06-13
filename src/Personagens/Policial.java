@@ -1,3 +1,5 @@
+package Personagens;
+
 
 public class Policial extends Personagem{
 

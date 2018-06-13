@@ -1,3 +1,4 @@
+package Personagens;
 
 public interface IPilotoSmart {
 	

@@ -1,3 +1,5 @@
+package Personagens;
+
 
 public class Chefe extends Personagem implements IPilotoSmart{
 

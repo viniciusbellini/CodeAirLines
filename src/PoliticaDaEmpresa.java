@@ -1,6 +1,9 @@
 import java.util.ArrayList;
 import java.util.List;
 
+import Personagens.IPilotoSmart;
+import Personagens.Personagem;
+
 /*
  * Apenas o piloto e o chefe de serviço de voo podem dirigir este veículo. 
  * A empresa autorizou que o policial pudesse dirigir o veículo também.

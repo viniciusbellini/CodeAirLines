@@ -1,3 +1,5 @@
+import Personagens.Personagem;
+
 
 public class Comissaria extends Personagem{
 
