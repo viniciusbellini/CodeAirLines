@@ -1,12 +1,13 @@
 package jogo.personagens;
 
+import static jogo.personagens.TipoPersonagem.PRESIDIARIO;
 
 public class Presidiario extends Personagem{
 
-	public Presidiario(String nome) {
-		super(nome);
+	public Presidiario() {
+		super(PRESIDIARIO);
 	}
-
+	
 	@Override
 	public void embarcar() {
 		// TODO Auto-generated method stub

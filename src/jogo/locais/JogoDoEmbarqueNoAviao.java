@@ -1,7 +1,8 @@
-package jogo;
+package jogo.locais;
 import javax.swing.JOptionPane;
 
 import jogo.personagens.Personagem;
+import jogo.personagens.TipoPersonagem;
 
 public class JogoDoEmbarqueNoAviao {
 
@@ -9,10 +10,12 @@ public class JogoDoEmbarqueNoAviao {
 		
 		Smart smart = new Smart();
 		
-		Terminal.popularTerminal();
+		Terminal terminal = new Terminal();
+		
+		terminal.popularTerminal();
 		
 		while (Smart.qtdeEmbarcadoNoSmart < 2) {
-			Personagem pass = Terminal.pesquisaPersonagemPorNome(JOptionPane.showInputDialog(null,
+			Personagem pass = Terminal.pesquisaPersonagemPorTipoPersonagem(JOptionPane.showInputDialog(null,
 					Terminal.ocupantesDoTerminal(),"Quem irá embarcar?", JOptionPane.QUESTION_MESSAGE));
 			Smart.adicionarPersonagemNoSmart(pass);
 			Terminal.removePersonagemDoTerminal(pass);
@@ -23,11 +26,6 @@ public class JogoDoEmbarqueNoAviao {
 		System.out.println(Terminal.ocupantesDoTerminal());
 		System.out.println(Smart.ocupantesDoSmart());
 		System.out.println(Aviao.ocupantesDoAviao());
-//		
-//		System.out.println(terminal.getOcupacao());
-//		System.out.println(terminal.getCapacidade());
-//		
-//		Smart.levarParaAviao(new Piloto("teste"));	
 		
 	}
 

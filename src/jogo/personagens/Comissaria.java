@@ -1,8 +1,11 @@
 package jogo.personagens;
+
+import static jogo.personagens.TipoPersonagem.COMISSARIA;
+
 public class Comissaria extends Personagem{
 
-	public Comissaria(String nome) {
-		super(nome);
+	public Comissaria() {
+		super(COMISSARIA);
 	}
 
 	@Override

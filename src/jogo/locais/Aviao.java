@@ -1,4 +1,4 @@
-package jogo;
+package jogo.locais;
 
 import java.util.ArrayList;
 import java.util.List;

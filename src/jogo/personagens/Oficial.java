@@ -1,10 +1,13 @@
 package jogo.personagens;
+
+import static jogo.personagens.TipoPersonagem.OFICIAL;
+
 public class Oficial extends Personagem{
 
-	public Oficial(String nome) {
-		super(nome);
+	public Oficial() {
+		super(OFICIAL);
 	}
-
+	
 	@Override
 	public void embarcar() {
 		// TODO Auto-generated method stub

@@ -1,10 +1,11 @@
 package jogo.personagens;
 
+import static jogo.personagens.TipoPersonagem.CHEFE;
 
 public class Chefe extends Personagem implements IPilotoSmart{
 
-	public Chefe(String nome) {
-		super(nome);
+	public Chefe() {
+		super(CHEFE);
 	}
 
 	@Override

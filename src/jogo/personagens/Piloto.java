@@ -1,10 +1,11 @@
 package jogo.personagens;
 
+import static jogo.personagens.TipoPersonagem.PILOTO;
 
 public class Piloto extends Personagem implements IPilotoSmart{
 	
-	public Piloto(String nome) {
-		super(nome);
+	public Piloto() {
+		super(PILOTO);
 	}
 
 	@Override

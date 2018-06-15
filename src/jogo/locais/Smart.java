@@ -1,4 +1,4 @@
-package jogo;
+package jogo.locais;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -60,7 +60,7 @@ public class Smart{
 	public static String ocupantesDoSmart() {
 		String ocupantesDoSmart = "";
 		for(Personagem p : smart){
-			ocupantesDoSmart = ocupantesDoSmart + p.getNome()+" | ";
+			ocupantesDoSmart = ocupantesDoSmart + p.getTipoPersonagem()+" | ";
 		}
 		return "Ocupantes do Smart: \n" + ocupantesDoSmart;
 	}
