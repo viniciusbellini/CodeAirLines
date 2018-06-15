@@ -1,9 +1,7 @@
 package Personagens;
+public class Comissaria extends Personagem{
 
-
-public class Policial extends Personagem{
-
-	public Policial(String nome) {
+	public Comissaria(String nome) {
 		super(nome);
 	}
 

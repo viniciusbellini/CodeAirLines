@@ -1,6 +1,6 @@
 package Personagens;
 
-public class Personagem {
+public abstract class Personagem {
 
 	private String nome;
 	
@@ -14,4 +14,7 @@ public class Personagem {
 
 	public void embarcarNoSmart() {
 	}
+	
+	public abstract void embarcar();
+	public abstract void desembarcar();
 }
