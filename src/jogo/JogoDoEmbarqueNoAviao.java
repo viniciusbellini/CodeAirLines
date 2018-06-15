@@ -1,6 +1,7 @@
+package jogo;
 import javax.swing.JOptionPane;
 
-import Personagens.Personagem;
+import jogo.personagens.Personagem;
 
 public class JogoDoEmbarqueNoAviao {
 

@@ -1,7 +1,8 @@
+package jogo;
 import java.util.ArrayList;
 import java.util.List;
 
-import Personagens.Personagem;
+import jogo.personagens.Personagem;
 
 public class Smart{
 

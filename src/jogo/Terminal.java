@@ -1,11 +1,14 @@
+package jogo;
 import java.util.ArrayList;
 import java.util.List;
 
-import Personagens.Chefe;
-import Personagens.Personagem;
-import Personagens.Piloto;
-import Personagens.Policial;
-import Personagens.Presidiario;
+import jogo.personagens.Chefe;
+import jogo.personagens.Comissaria;
+import jogo.personagens.Oficial;
+import jogo.personagens.Personagem;
+import jogo.personagens.Piloto;
+import jogo.personagens.Policial;
+import jogo.personagens.Presidiario;
 
 public class Terminal{
 

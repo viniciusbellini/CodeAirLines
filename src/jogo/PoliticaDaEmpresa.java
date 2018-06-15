@@ -1,8 +1,9 @@
+package jogo;
 import java.util.ArrayList;
 import java.util.List;
 
-import Personagens.IPilotoSmart;
-import Personagens.Personagem;
+import jogo.personagens.IPilotoSmart;
+import jogo.personagens.Personagem;
 
 /*
  * Apenas o piloto e o chefe de serviço de voo podem dirigir este veículo. 

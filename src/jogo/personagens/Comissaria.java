@@ -1,15 +1,8 @@
-package Personagens;
+package jogo.personagens;
+public class Comissaria extends Personagem{
 
-
-public class Piloto extends Personagem implements IPilotoSmart{
-	
-	public Piloto(String nome) {
+	public Comissaria(String nome) {
 		super(nome);
-	}
-
-	@Override
-	public void dirigirSmart() {
-		
 	}
 
 	@Override
@@ -24,5 +17,4 @@ public class Piloto extends Personagem implements IPilotoSmart{
 		
 	}
 
-	
 }

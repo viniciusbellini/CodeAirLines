@@ -1,4 +1,4 @@
-package Personagens;
+package jogo.personagens;
 
 public interface IPilotoSmart {
 	

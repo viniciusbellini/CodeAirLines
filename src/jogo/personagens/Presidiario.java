@@ -1,9 +1,9 @@
-package Personagens;
+package jogo.personagens;
 
 
-public class Policial extends Personagem{
+public class Presidiario extends Personagem{
 
-	public Policial(String nome) {
+	public Presidiario(String nome) {
 		super(nome);
 	}
 

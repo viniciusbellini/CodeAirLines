@@ -1,15 +1,14 @@
-package Personagens;
+package jogo.personagens;
 
 
-public class Chefe extends Personagem implements IPilotoSmart{
-
-	public Chefe(String nome) {
+public class Piloto extends Personagem implements IPilotoSmart{
+	
+	public Piloto(String nome) {
 		super(nome);
 	}
 
 	@Override
 	public void dirigirSmart() {
-		// TODO Auto-generated method stub
 		
 	}
 
@@ -25,4 +24,5 @@ public class Chefe extends Personagem implements IPilotoSmart{
 		
 	}
 
+	
 }
